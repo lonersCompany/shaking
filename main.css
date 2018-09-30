@@ -1,0 +1,393 @@
+@charset "UTF-8";
+/*Page*/
+/*Typo*/
+/*Colors*/
+/*Animation*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img,
+video {
+  width: 100%;
+  vertical-align: middle;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translateX(0.5rem);
+            transform: translateX(0.5rem);
+  }
+  50% {
+    -webkit-transform: translateX(-0.5rem);
+            transform: translateX(-0.5rem);
+  }
+  100% {
+    -webkit-transform: translateX(0.5rem);
+            transform: translateX(0.5rem);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translateX(0.5rem);
+            transform: translateX(0.5rem);
+  }
+  50% {
+    -webkit-transform: translateX(-0.5rem);
+            transform: translateX(-0.5rem);
+  }
+  100% {
+    -webkit-transform: translateX(0.5rem);
+            transform: translateX(0.5rem);
+  }
+}
+
+@-webkit-keyframes strobo {
+  0% {
+    background-color: #320032;
+  }
+  10% {
+    background-color: #320032;
+  }
+  60% {
+    background-color: #000032;
+  }
+  100% {
+    background-color: #320032;
+  }
+}
+
+@keyframes strobo {
+  0% {
+    background-color: #320032;
+  }
+  10% {
+    background-color: #320032;
+  }
+  60% {
+    background-color: #000032;
+  }
+  100% {
+    background-color: #320032;
+  }
+}
+
+@-webkit-keyframes strobotouch {
+  0% {
+    background-color: #640064;
+  }
+  100% {
+    background-color: #000032;
+  }
+}
+
+@keyframes strobotouch {
+  0% {
+    background-color: #640064;
+  }
+  100% {
+    background-color: #000032;
+  }
+}
+
+body {
+  overflow: hidden;
+  background-color: #320032;
+  width: 100vw;
+}
+
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 0, 70);
+  opacity: 0;
+  z-index: 100;
+  /* animation: loadinganimation 1.5s ease-in infinite; */
+  transition: all 500ms ease-out 1s;
+  pointer-events: none;
+}
+
+.hello {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+}
+
+.hello img {
+  width: 100%;
+}
+
+.load {
+  opacity: 0;
+}
+
+@keyframes loadinganimation {
+0% {background-color: rgb(255, 0, 70)}
+40% {background-color: rgb(255, 0, 0)}
+70% {background-color: rgb(200, 0, 70)}
+100% {background-color: rgb(255, 0, 70)}
+}
+
+@font-face {
+  font-family: 'texgyreheroscn';
+  src: url("../fonts/texgyreheroscn-regular.otf");
+}
+
+@font-face {
+  font-family: 'texgyre-bold';
+  src: url("../fonts/texgyreheros-bold.otf");
+}
+
+@font-face {
+  font-family: 'texgyre-bolditalic';
+  src: url("../fonts/texgyreheros-bolditalic.otf");
+}
+
+html {
+  font-size: 14px;
+  font-family: "texgyre-bold", helvetica, arial;
+  color: #ff0064;
+  line-height: 1.4em;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+h1 {
+  font-size: 1rem;
+  line-height: 1.3;
+  margin-top: 25vh;
+}
+
+h2 {
+  font-size: 1rem;
+  line-height: 1.3;
+  margin-top: 25vh;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.4em;
+}
+
+a {
+  text-decoration: none;
+  color: #ff0064;
+}
+
+a::after {
+  content: "•";
+  margin-left: 0.25em;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #ff99c1;
+}
+
+a:hover::after {
+  margin-left: 0.6em;
+}
+
+.project {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-bottom: 20vh;
+}
+
+@media screen and (min-width: 992px) {
+  .project {
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  pointer-events: none;
+  z-index: -100;
+}
+
+.app-body {
+  background-color: #320032;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation: strobo 3s infinite;
+          animation: strobo 3s infinite;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.app-body.app-body-touch {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-animation: strobotouch 2s forwards;
+          animation: strobotouch 2s forwards;
+}
+
+.app-body.app-body-touch .app-message {
+  -webkit-filter: none;
+          filter: none;
+  -webkit-animation: none;
+          animation: none;
+}
+
+.app-message {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-animation: shake 1ms infinite;
+          animation: shake 1ms infinite;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.message-inner-text {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.25em;
+  letter-spacing: 0.04em;
+  padding: 0 20px;
+  text-transform: uppercase;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media screen and (min-width: 700px) {
+  .message-inner-text {
+    margin: 3rem auto;
+  }
+}
+
+.message-inner-image {
+  width: 100%;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.message-inner-image-small {
+  padding: 3rem;
+  max-width: 400px;
+  margin: 20vh auto;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.pagination {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
