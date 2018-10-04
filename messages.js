@@ -3,7 +3,7 @@ const textArray = [
     message: '<div class="message-inner-text"><h1>František Fekete<br>/ Fluid Identity Club</h1></div>'
   },
   {
-    message: '<div class="message-inner-image-small"><img src="images/fluidentity-01.png"></div>'
+    message: '<div class="message-inner-image-small"><img src="images/fluidentity.png"></div>'
   },
   {
     message: '<div class="message-inner-text">Před tebou je něco děsivě blízkého, ale&nbsp;bez reálných obrysů.</div>'
