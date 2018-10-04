@@ -149,6 +149,7 @@ body {
   overflow: hidden;
   background-color: #320032;
   width: 100vw;
+  cursor: grap;
 }
 
 .loading {
